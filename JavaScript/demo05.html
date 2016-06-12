@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript 异常捕获</title>
+</head>
+<body>
+<!--<script>-->
+    <!--var str ="hello";-->
+    <!--function  demo(){-->
+        <!--try {-->
+            <!--alert(str);-->
+        <!--}catch (err) { //发生错误才触发-->
+            <!--alert(err);-->
+        <!--}-->
+<!--//        alert(str);-->
+    <!--}-->
+    <!--demo();-->
+<!--</script>-->
+<script>
+    function demo(){
+    try {
+        var e = document.getElementById("text").value;
+        if (e==""){
+            throw "请输入";
+        }
+    } catch (err){
+        alert(err);
+    }
+    }
+</script>
+<form>
+    <input type="text" id="text">
+    <input type="button" id="btn" onclick="demo()" value="按钮">
+</form>
+</body>
+</html>

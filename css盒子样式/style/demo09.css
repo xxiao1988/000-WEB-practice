@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: "microsoft YaHei";
+    font-size: 14px;
+    line-height: 1.4em;
+    min-width: 600px;
+}
+.daminMenuWarp {
+    position: relative;
+    float: left;
+    width: 160px;
+    background: #222222;
+
+    
+}
+.adminmenu {
+    clear: both;
+    margin: 12px 0;
+    list-style: none;
+    width: 160px;
+    background: #222222;
+}
+
+.adminmenu li.menu {
+    min-height: 34px;
+    cursor: pointer;
+
+}
+.menu a {
+    padding: 10px 0;
+    display: block;
+    color: #ffffff;
+    /*text-align: center;*/
+    text-decoration: none;
+    text-indent: 40px;
+}
+
+a:hover {
+    background: #000000;
+    color: #23Ba98;
+}

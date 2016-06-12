@@ -1,0 +1,46 @@
+.menu {
+    list-style: none;
+    padding:0;
+    margin: 0;
+    display: flex; /*父及设计display*/
+    flex-flow: row wrap;
+}
+.menu li {
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    flex: 1 1 100% ;
+}
+.menu li:nth-child(1) {
+    background-color: darkblue;
+}
+.menu li:nth-child(2) {
+    background-color: blue;
+}
+.menu li:nth-child(3) {
+    background-color: blueviolet;
+}
+.menu li:nth-child(4) {
+    background-color: brown;
+}
+.menu li:nth-child(5) {
+    background-color: crimson;
+}
+.menu li:nth-child(6) {
+    background-color: green;
+}
+.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/*媒体查询*/
+@media (win-width:480){
+   .menu li {
+       flex: 1 1 50% ;
+   }
+}
+@media (win-width:768){
+    .menu {
+        flex-flow: row nowrap;
+    }
+}

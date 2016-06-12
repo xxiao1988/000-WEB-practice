@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>range 对象方法</title>
+</head>
+<body>
+<div onmouseup="moveButton()" style="width: 400px; background: #0ff;">
+    这是我随便书写的文字这是我随便书写的文字这是我随便书写的文字这是我随便书写的文字这是我随便书写的文字这是我随便书写的文字。
+
+</div>
+<button onclick="" id="button">点击</button>
+<script>
+    function moveButton(){
+        var btn = document.getElementById("button");
+        var selection = document.getSelection();
+        if (selection.rangeCount>0){
+            var range = selection.getRangeAt(0);
+            range.insertNode(btn);
+        }
+    }
+</script>
+</body>
+</html>

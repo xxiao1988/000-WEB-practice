@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div" style="background: #00ffff; width: 300px; height: 50px;">元素</div>
+<button onclick="selectionRangeContents()">选择元素</button>
+<button onclick="unselection ()">取消元素</button>
+<button onclick="showRange()">显示Range内容</button>
+<script type="text/javascript">
+    var rangeObj = document.createRange();
+    function  selectionRangeContents(){
+        var div = document.getElementById("div");
+        rangeObj.selectNode(div);
+        //rangeObj.detach(); //释放方法
+
+    }
+    function unselection (){
+        rangeObj.collapse(false);
+    }
+    function  showRange(){
+        alert(rangeObj.toString());
+    }
+</script>
+</body>
+</html>
