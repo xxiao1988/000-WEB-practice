@@ -1,8 +1,0 @@
-/*
-
- */
-
-
- function func(a,b) {
- 	return a;
- }
