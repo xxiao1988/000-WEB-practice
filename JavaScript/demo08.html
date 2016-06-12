@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>javascript 创建对象</title>
+    <style type="text/css">
+    body {
+        background-color: #333;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 0bject创建对象 -->
+    <!--<script type="text/javascript">-->
+    <!--people = new Object();//注意大小写 创建了一个peolpe对象-->
+    <!--people.name="xxiao";-->
+    <!--people.age="30";-->
+    <!--document.write("name:"+people.name+",age:"+people.age);-->
+    <!--</script>-->
+    <!--以数组的形式创建对象-->
+    <!--<script>-->
+    <!--people = {name:"xxiao",age:"33"};-->
+    <!--document.write("name:"+people.name+",age:"+people.age);-->
+    <!--</script>-->
+    <script>
+    function people(name, age) {
+        this._name = name;
+        this._age = age;
+    }
+    son = new people("xxiao", 30);
+    document.write("name:" + son._name + ",age:" + son._age);
+    </script>
+</body>
+
+</html>
